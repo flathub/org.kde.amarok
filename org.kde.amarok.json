@@ -98,6 +98,9 @@
     {
       "name": "amarok",
       "buildsystem": "cmake-ninja",
+      "post-install": [
+        "install -d ${FLATPAK_DEST}/lib/ffmpeg"
+      ],
       "sources": [
         {
           "type": "archive",
