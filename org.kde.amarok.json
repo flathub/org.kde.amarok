@@ -49,6 +49,10 @@
         "/man",
         "*.a"
       ],
+      "post-install": [
+        "install -d /app/lib",
+        "ln -s mariadb/libmariadb.so.3 /app/lib"
+      ],
       "sources": [
         {
           "type": "archive",
