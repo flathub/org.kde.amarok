@@ -32,15 +32,22 @@
     "--talk-name=org.kde.kcookiejar5",
     "--talk-name=org.kde.StatusNotifierWatcher"
   ],
+  "cleanup-commands": [
+    "/app/cleanup-BaseApp.sh"
+  ],
+  "cleanup": [
+    "/include"
+  ],
   "modules": [
     {
       "name": "libmariadb",
       "buildsystem": "cmake-ninja",
       "cleanup": [
-        "/bin/",
-        "/include/",
-        "/lib/pkgconfig/",
-        "/man/"
+        "/bin",
+        "/include",
+        "/lib/pkgconfig",
+        "/man",
+        "*.a"
       ],
       "sources": [
         {
@@ -84,7 +91,14 @@
     {
       "name": "libmtp",
       "buildsystem": "autotools",
-      "config-opts" : ["--with-udev=/app/lib/udev"],
+      "config-opts" : [
+        "--with-udev=/app/lib/udev"
+      ],
+      "cleanup": [
+        "/share/doc",
+        "*.a",
+        "*.la"
+      ],
       "sources": [
         {
           "type": "archive",
