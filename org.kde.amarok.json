@@ -1,13 +1,13 @@
 {
   "app-id": "org.kde.amarok",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-21.08",
+  "runtime-version": "5.15-23.08",
   "base": "io.qt.qtwebengine.BaseApp",
-  "base-version": "5.15-21.08",
+  "base-version": "5.15-23.08",
   "add-extensions": {
     "org.freedesktop.Platform.ffmpeg-full": {
       "directory": "lib/ffmpeg",
-      "version": "21.08",
+      "version": "23.08",
       "add-ld-path": ".",
       "no-autodownload": true,
       "autodelete": false
