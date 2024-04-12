@@ -132,14 +132,6 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/unstable/amarok/$version/amarok-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "appdata.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "dbus.patch"
                 }
             ]
         }
