@@ -124,13 +124,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/amarok/2.9.82/amarok-2.9.82.tar.xz",
-                    "sha256": "6c919bc01c34b85da0c7c276c740b5e712766824ddda04e3f2f276ebdbd3f8f8",
+                    "url": "https://download.kde.org/stable/amarok/3.0.0/amarok-3.0.0.tar.xz",
+                    "sha256": "14a87678305fad76a0a1daca555a6775ffa642e5ebbcccecd91f497093992c1c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13985,
                         "stable-only": true,
-                        "url-template": "https://download.kde.org/unstable/amarok/$version/amarok-$version.tar.xz"
+                        "url-template": "https://download.kde.org/stable/amarok/$version/amarok-$version.tar.xz"
                     }
                 }
             ]
