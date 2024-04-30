@@ -132,6 +132,10 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/amarok/$version/amarok-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "1df673defcc4ea62edbf1a964eec289a42499a42.patch"
                 }
             ]
         }
