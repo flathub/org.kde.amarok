@@ -40,6 +40,48 @@
     ],
     "modules": [
         {
+            "name": "mariadb",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DWITH_EMBEDDED_SERVER=ON",
+                "-DDEFAULT_CHARSET=utf8mb4",
+                "-DDEFAULT_COLLATION=utf8mb4_unicode_ci",
+                "-DPLUGIN_EXAMPLE=NO",
+                "-DPLUGIN_FEDERATED=NO",
+                "-DPLUGIN_FEEDBACK=NO",
+                "-DWITH_EXTRA_CHARSETS=complex",
+                "-DWITH_JEMALLOC=ON",
+                "-DWITH_PCRE2=system",
+                "-DWITH_SSL=system",
+                "-DWITH_SYSTEMD=no",
+                "-DWITH_UNIT_TESTS=OFF",
+                "-DWITH_ZLIB=system"
+            ]
+            "cleanup": [
+                "/bin",
+                "/include",
+                "/lib/pkgconfig",
+                "/man",
+                "*.a"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://rsync.osuosl.org/pub/mariadb/mariadb-11.3.2/source/mariadb-11.3.2.tar.gz",
+                    "sha256": "5570778f0a2c27af726c751cda1a943f3f8de96d11d107791be5b44a0ce3fb5c",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1887,
+                        "stable-only": true,
+                        "url-template": "https://rsync.osuosl.org/pub/mariadb/mariadb-$version/source/mariadb-$version.gz",
+                        "versions": {
+                            "<": "11.4"
+                        }
+                    }
+                }
+            ]
+        },
+        {
             "name": "libmariadb",
             "buildsystem": "cmake-ninja",
             "cleanup": [
