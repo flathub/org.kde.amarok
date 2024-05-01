@@ -40,6 +40,30 @@
     ],
     "modules": [
         {
+            "name": "fmt",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "config-opts": [
+                "-DFMT_DOC=OFF",
+                "-DFMT_TEST=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/fmtlib/fmt/releases/download/10.2.1/fmt-10.2.1.zip",
+                    "sha256": "312151a2d13c8327f5c9c586ac6cf7cddc1658e8f53edae0ec56509c8fa516c9",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/fmtlib/fmt/releases/latest",
+                        "tag-query": ".tag_name",
+                        "timestamp-query": ".published_at",
+                        "version-query": "$tag",
+                        "url-query": "\"https://github.com/fmtlib/fmt/releases/download/\\($tag)/fmt-\\($version).zip\""
+                    }
+                }
+            ]
+        },
+        {
             "name": "mariadb",
             "buildsystem": "cmake-ninja",
             "config-opts": [
@@ -52,11 +76,19 @@
                 "-DWITH_EXTRA_CHARSETS=complex",
                 "-DWITH_JEMALLOC=ON",
                 "-DWITH_PCRE2=system",
+                "-DWITH_LIBFMT=system",
                 "-DWITH_SSL=system",
                 "-DWITH_SYSTEMD=no",
                 "-DWITH_UNIT_TESTS=OFF",
-                "-DWITH_ZLIB=system"
-            ]
+                "-DWITH_ZLIB=system",
+                "-DWITHOUT_ARCHIVE_STORAGE_ENGINE=1",
+                "-DWITHOUT_BLACKHOLE_STORAGE_ENGINE=1",
+                "-DWITHOUT_PARTITION_STORAGE_ENGINE=1",
+                "-DWITHOUT_TOKUDB=1",
+                "-DWITHOUT_EXAMPLE_STORAGE_ENGINE=1",
+                "-DWITHOUT_FEDERATED_STORAGE_ENGINE=1",
+                "-DWITHOUT_PBXT_STORAGE_ENGINE=1"
+            ],
             "cleanup": [
                 "/bin",
                 "/include",
@@ -78,28 +110,6 @@
                             "<": "11.4"
                         }
                     }
-                }
-            ]
-        },
-        {
-            "name": "libmariadb",
-            "buildsystem": "cmake-ninja",
-            "cleanup": [
-                "/bin",
-                "/include",
-                "/lib/pkgconfig",
-                "/man",
-                "*.a"
-            ],
-            "post-install": [
-                "install -d /app/lib",
-                "ln -s mariadb/libmariadb.so.3 /app/lib"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/mariadb-corporation/mariadb-connector-c/archive/refs/tags/v3.2.6.zip",
-                    "sha256": "9fe6a161d1c1ff4f74bb87e4c587bbd2a14146a2bc3ba7b677633bfa0445b8b5"
                 }
             ]
         },
