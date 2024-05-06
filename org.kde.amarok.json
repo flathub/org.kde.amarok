@@ -27,7 +27,7 @@
         "--filesystem=/run/media",
         "--filesystem=/media",
         "--system-talk-name=org.freedesktop.UDisks2",
-        "--talk-name=org.kde.amarok.Mpris2Extensions.Player",
+        "--own-name=org.kde.amarok.Mpris2Extensions.Player",
         "--talk-name=org.kde.kglobalaccel",
         "--talk-name=org.kde.kcookiejar5",
         "--talk-name=org.kde.StatusNotifierWatcher"
