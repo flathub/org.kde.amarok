@@ -30,7 +30,8 @@
         "--talk-name=org.kde.amarok.Mpris2Extensions.Player",
         "--talk-name=org.kde.kglobalaccel",
         "--talk-name=org.kde.kcookiejar5",
-        "--talk-name=org.kde.StatusNotifierWatcher"
+        "--talk-name=org.kde.StatusNotifierWatcher",
+        "--own-name=org.mpris.MediaPlayer2.amarok"
     ],
     "cleanup-commands": [
         "/app/cleanup-BaseApp.sh"
