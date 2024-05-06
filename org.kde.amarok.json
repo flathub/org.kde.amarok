@@ -17,20 +17,20 @@
     "command": "amarok",
     "rename-icon": "amarok",
     "finish-args": [
+        "--device=dri",
+        "--filesystem=/media",
+        "--filesystem=/run/media",
+        "--filesystem=home",
+        "--own-name=org.kde.amarok.Mpris2Extensions.Player",
         "--share=ipc",
         "--share=network",
-        "--socket=wayland",
         "--socket=fallback-x11",
         "--socket=pulseaudio",
-        "--device=dri",
-        "--filesystem=home",
-        "--filesystem=/run/media",
-        "--filesystem=/media",
+        "--socket=wayland",
         "--system-talk-name=org.freedesktop.UDisks2",
-        "--own-name=org.kde.amarok.Mpris2Extensions.Player",
-        "--talk-name=org.kde.kglobalaccel",
+        "--talk-name=org.kde.StatusNotifierWatcher",
         "--talk-name=org.kde.kcookiejar5",
-        "--talk-name=org.kde.StatusNotifierWatcher"
+        "--talk-name=org.kde.kglobalaccel"
     ],
     "cleanup-commands": [
         "/app/cleanup-BaseApp.sh"
