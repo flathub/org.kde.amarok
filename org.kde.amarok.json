@@ -51,8 +51,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/fmtlib/fmt/releases/download/8.0.1/fmt-8.0.1.zip",
-                    "sha256": "a627a56eab9554fc1e5dd9a623d0768583b3a383ff70a4312ba68f94c9d415bf",
+                    "url": "https://github.com/fmtlib/fmt/releases/download/11.0.2/fmt-11.0.2.zip",
+                    "sha256": "40fc58bebcf38c759e11a7bd8fdc163507d2423ef5058bba7f26280c5b9c5465",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/fmtlib/fmt/releases/latest",
@@ -180,8 +180,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/amarok/3.0.1/amarok-3.0.1.tar.xz",
-                    "sha256": "4becf2ae9ddcbe861103e6421436a2ade22f538cb1c3600d4e667f71bea58f2b",
+                    "url": "https://download.kde.org/stable/amarok/3.1.0/amarok-3.1.0.tar.xz",
+                    "sha256": "c97b9967fa8f15b8e9f4dfb66184cac6a7ec9dc665a105bc5168d8e720fe16eb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13985,
