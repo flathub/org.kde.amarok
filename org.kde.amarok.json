@@ -51,8 +51,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/fmtlib/fmt/releases/download/8.0.1/fmt-8.0.1.zip",
-                    "sha256": "a627a56eab9554fc1e5dd9a623d0768583b3a383ff70a4312ba68f94c9d415bf",
+                    "url": "https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.zip",
+                    "sha256": "cdc885473510ae0ea909b5589367f8da784df8b00325c55c7cbbab3058424120",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/fmtlib/fmt/releases/latest",
@@ -103,13 +103,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://rsync.osuosl.org/pub/mariadb/mariadb-11.3.2/source/mariadb-11.3.2.tar.gz",
-                    "sha256": "5570778f0a2c27af726c751cda1a943f3f8de96d11d107791be5b44a0ce3fb5c",
+                    "url": "https://archive.mariadb.org/mariadb-11.4.3/source/mariadb-11.4.3.tar.gz",
+                    "sha256": "6f0017b9901bb1897de0eed21caef9ffa9d66ef559345a0d8a6f011308413ece",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1887,
                         "stable-only": true,
-                        "url-template": "https://rsync.osuosl.org/pub/mariadb/mariadb-$version/source/mariadb-$version.gz",
+                        "url-template": "https://archive.mariadb.org/mariadb-$version/source/mariadb-$version.tar.gz",
                         "versions": {
                             "<": "11.4"
                         }
