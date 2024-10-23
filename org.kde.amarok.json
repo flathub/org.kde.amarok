@@ -51,8 +51,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.zip",
-                    "sha256": "cdc885473510ae0ea909b5589367f8da784df8b00325c55c7cbbab3058424120",
+                    "url": "https://github.com/fmtlib/fmt/releases/download/11.0.2/fmt-11.0.2.zip",
+                    "sha256": "40fc58bebcf38c759e11a7bd8fdc163507d2423ef5058bba7f26280c5b9c5465",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/fmtlib/fmt/releases/latest",
@@ -103,8 +103,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://archive.mariadb.org/mariadb-11.4.3/source/mariadb-11.4.3.tar.gz",
-                    "sha256": "6f0017b9901bb1897de0eed21caef9ffa9d66ef559345a0d8a6f011308413ece",
+                    "url": "https://archive.mariadb.org/mariadb-11.3.2/source/mariadb-11.3.2.tar.gz",
+                    "sha256": "5570778f0a2c27af726c751cda1a943f3f8de96d11d107791be5b44a0ce3fb5c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1887,
