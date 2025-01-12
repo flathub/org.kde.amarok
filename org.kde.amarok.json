@@ -51,8 +51,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.zip",
-                    "sha256": "cdc885473510ae0ea909b5589367f8da784df8b00325c55c7cbbab3058424120",
+                    "url": "https://github.com/fmtlib/fmt/releases/download/11.1.2/fmt-11.1.2.zip",
+                    "sha256": "ef54df1d4ba28519e31bf179f6a4fb5851d684c328ca051ce5da1b52bf8b1641",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/fmtlib/fmt/releases/latest",
@@ -103,8 +103,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://archive.mariadb.org/mariadb-11.4.3/source/mariadb-11.4.3.tar.gz",
-                    "sha256": "6f0017b9901bb1897de0eed21caef9ffa9d66ef559345a0d8a6f011308413ece",
+                    "url": "https://archive.mariadb.org/mariadb-11.3.2/source/mariadb-11.3.2.tar.gz",
+                    "sha256": "5570778f0a2c27af726c751cda1a943f3f8de96d11d107791be5b44a0ce3fb5c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1887,
@@ -180,8 +180,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/amarok/3.2.0/amarok-3.2.0.tar.xz",
-                    "sha256": "95516b26b0ced3739a1b3498d1f15cb4de75141dfe30f2797a9132b398adfcb7",
+                    "url": "https://download.kde.org/stable/amarok/3.2.1/amarok-3.2.1.tar.xz",
+                    "sha256": "e409430f43c79476ee846e8e8bfc4a57e9aa33fc0c4e2807b416895e758c2793",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13985,
