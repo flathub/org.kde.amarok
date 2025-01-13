@@ -111,7 +111,7 @@
                         "stable-only": true,
                         "url-template": "https://archive.mariadb.org/mariadb-$version/source/mariadb-$version.tar.gz",
                         "versions": {
-                            "<": "11.4"
+                            "<": "11.5"
                         }
                     }
                 }
