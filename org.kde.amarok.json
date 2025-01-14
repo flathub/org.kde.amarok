@@ -41,33 +41,6 @@
     ],
     "modules": [
         {
-            "name": "fmt",
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "config-opts": [
-                "-DFMT_DOC=OFF",
-                "-DFMT_TEST=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.zip",
-                    "sha256": "cdc885473510ae0ea909b5589367f8da784df8b00325c55c7cbbab3058424120",
-                    "x-checker-data": {
-                        "type": "json",
-                        "url": "https://api.github.com/repos/fmtlib/fmt/releases/latest",
-                        "tag-query": ".tag_name",
-                        "timestamp-query": ".published_at",
-                        "version-query": "$tag",
-                        "url-query": "\"https://github.com/fmtlib/fmt/releases/download/\\($tag)/fmt-\\($version).zip\"",
-                        "versions": {
-                            "<": "10"
-                        }
-                    }
-                }
-            ]
-        },
-        {
             "name": "mariadb",
             "buildsystem": "cmake-ninja",
             "config-opts": [
@@ -80,7 +53,6 @@
                 "-DWITH_EXTRA_CHARSETS=complex",
                 "-DWITH_JEMALLOC=ON",
                 "-DWITH_PCRE2=system",
-                "-DWITH_LIBFMT=system",
                 "-DWITH_SSL=system",
                 "-DWITH_SYSTEMD=no",
                 "-DWITH_UNIT_TESTS=OFF",
