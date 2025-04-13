@@ -1,13 +1,13 @@
 {
     "app-id": "org.kde.amarok",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-23.08",
+    "runtime-version": "6.8",
     "base": "io.qt.qtwebengine.BaseApp",
-    "base-version": "5.15-23.08",
+    "base-version": "6.8",
     "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
             "directory": "lib/ffmpeg",
-            "version": "23.08",
+            "version": "24.08",
             "add-ld-path": ".",
             "no-autodownload": true,
             "autodelete": false
@@ -106,21 +106,22 @@
             ]
         },
         {
-            "name": "libmygpo-qt",
+            "name": "libmygpo-qt6",
             "buildsystem": "cmake-ninja",
             "config-opts": [
-                "-DMYGPO_BUILD_TESTS=OFF"
+                "-DMYGPO_BUILD_TESTS=OFF",
+                "-DBUILD_WITH_QT6=ON"
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "http://stefan.derkits.at/files/libmygpo-qt/libmygpo-qt.1.1.0.tar.gz",
-                    "sha256": "82765a9baa7b6bb3a3277759cec9c3779eee691db9180affe35a67813346e1cd"
+                    "type": "git",
+                    "url": "https://github.com/Mazhoon/libmygpo-qt.git",
+                    "commit": "4dfa3ba1f075ca9c9dbd5b452f88ba75f6f13c31"
                 }
             ]
         },
         {
-            "name": "liblastfm-qt5",
+            "name": "liblastfm-qt6",
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DBUILD_TESTS=OFF",
@@ -128,9 +129,9 @@
             ],
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/lastfm/liblastfm/archive/1.1.0/liblastfm-qt5-1.1.0.tar.gz",
-                    "sha256": "f61f0daa384e081a8f2bd2f7a2148babff22696e5b72ecdac86940a10100b1c8"
+                    "type": "git",
+                    "url": "https://github.com/Mazhoon/liblastfm.git",
+                    "commit": "81e8f9dc16a0a18fe9a066d51c2071086326670b"
                 }
             ],
             "modules": [
@@ -168,8 +169,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/amarok/3.2.2/amarok-3.2.2.tar.xz",
-                    "sha256": "fcde3c37d1f815ecc88930fe6d1ea4d4b0b1ed3b33fcd32df5542af874dd2ab0",
+                    "url": "https://download.kde.org/unstable/amarok/3.2.81/amarok-3.2.81.tar.xz",
+                    "sha256": "f0661c58b60faa97425928475347ea9f8e1b20582791687ee228d74a0573625f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13985,
