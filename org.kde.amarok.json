@@ -91,8 +91,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://archive.mariadb.org/mariadb-11.4.5/source/mariadb-11.4.5.tar.gz",
-                    "sha256": "ff6595f8c482f9921e39b97fa1122377a69f0dcbd92553c6b9032cbf0e9b5354",
+                    "url": "https://archive.mariadb.org/mariadb-11.4.6/source/mariadb-11.4.6.tar.gz",
+                    "sha256": "1b26c0bb2d025dbfac3b9852d2b7eafda56a171b67ac2e27831ec0414fb7df07",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1887,
