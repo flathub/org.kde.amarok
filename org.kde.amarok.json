@@ -169,8 +169,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/amarok/3.2.2/amarok-3.2.2.tar.xz",
-                    "sha256": "fcde3c37d1f815ecc88930fe6d1ea4d4b0b1ed3b33fcd32df5542af874dd2ab0",
+                    "url": "https://download.kde.org/stable/amarok/3.3.0/amarok-3.3.0.tar.xz",
+                    "sha256": "2dce587b3c14bf920ea4d89076964eb974fc434570147280fcd1e43cf14ff1ac",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13985,
