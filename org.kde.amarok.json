@@ -17,21 +17,21 @@
     "command": "amarok",
     "rename-icon": "amarok",
     "finish-args": [
+        "--device=dri",
+        "--env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess",
+        "--filesystem=/media",
+        "--filesystem=/run/media",
+        "--filesystem=home",
+        "--own-name=org.mpris.MediaPlayer2.amarok",
         "--share=ipc",
         "--share=network",
-        "--socket=wayland",
         "--socket=fallback-x11",
         "--socket=pulseaudio",
-        "--device=dri",
-        "--filesystem=home",
-        "--filesystem=/run/media",
-        "--filesystem=/media",
+        "--socket=wayland",
         "--system-talk-name=org.freedesktop.UDisks2",
-        "--talk-name=org.kde.kglobalaccel",
-        "--talk-name=org.kde.kcookiejar5",
         "--talk-name=org.kde.StatusNotifierWatcher",
-        "--own-name=org.mpris.MediaPlayer2.amarok",
-        "--env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess"
+        "--talk-name=org.kde.kcookiejar5",
+        "--talk-name=org.kde.kglobalaccel"
     ],
     "cleanup-commands": [
         "/app/cleanup-BaseApp.sh"
