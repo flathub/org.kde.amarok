@@ -37,7 +37,10 @@
         "/app/cleanup-BaseApp.sh"
     ],
     "cleanup": [
-        "/include"
+        "/include",
+        "/lib/*/pkgconfig",
+        "/share/kdevappwizard",
+        "/share/qlogging-categories6"
     ],
     "modules": [
         {
