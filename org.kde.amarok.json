@@ -52,7 +52,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/fmtlib/fmt/releases/download/11.2.0/fmt-11.2.0.zip",
-                    "sha256": "203eb4e8aa0d746c62d8f903df58e0419e3751591bb53ff971096eaa0ebd4ec3"
+                    "sha256": "203eb4e8aa0d746c62d8f903df58e0419e3751591bb53ff971096eaa0ebd4ec3",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 11526,
+                        "stable-only": true,
+                        "url-template": "https://github.com/fmtlib/fmt/releases/download/$version/fmt-$version.zip"
+                    }
                 }
             ]
         },
@@ -154,7 +160,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/libmtp/libmtp/releases/download/v1.1.22/libmtp-1.1.22.tar.gz",
-                    "sha256": "c3fcf411aea9cb9643590cbc9df99fa5fe30adcac695024442973d76fa5f87bc"
+                    "sha256": "c3fcf411aea9cb9643590cbc9df99fa5fe30adcac695024442973d76fa5f87bc",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 10017,
+                        "stable-only": true,
+                        "url-template": "https://github.com/libmtp/libmtp/releases/download/v$version/libmtp-$version.tar.gz"
+                    }
                 }
             ],
             "modules": [
