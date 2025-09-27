@@ -23,7 +23,7 @@
         "--socket=fallback-x11",
         "--socket=pulseaudio",
         "--device=dri",
-        "--filesystem=home",
+        "--filesystem=xdg-music",
         "--filesystem=/run/media",
         "--filesystem=/media",
         "--system-talk-name=org.freedesktop.UDisks2",
