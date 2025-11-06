@@ -159,9 +159,6 @@
                         "url-template": "https://github.com/libmtp/libmtp/releases/download/v$version/libmtp-$version.tar.gz"
                     }
                 }
-            ],
-            "modules": [
-                "shared-modules/libusb/libusb.json"
             ]
         },
         {
