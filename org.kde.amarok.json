@@ -27,8 +27,16 @@
     "cleanup": [
         "/include",
         "/lib/*/pkgconfig",
+        "/mariadb-test",
+        "/share/doc",
         "/share/kdevappwizard",
-        "/share/qlogging-categories6"
+        "/share/qlogging-categories6",
+        "/sql-bench",
+        "*la",
+        "*.a"
+    ],
+    "cleanup-commands": [
+        "/app/cleanup-BaseApp.sh"
     ],
     "modules": [
         {
