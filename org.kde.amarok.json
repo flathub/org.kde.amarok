@@ -27,8 +27,16 @@
     "cleanup": [
         "/include",
         "/lib/*/pkgconfig",
+        "/mariadb-test",
+        "/share/doc",
         "/share/kdevappwizard",
-        "/share/qlogging-categories6"
+        "/share/qlogging-categories6",
+        "/sql-bench",
+        "*la",
+        "*.a"
+    ],
+    "cleanup-commands": [
+        "/app/cleanup-BaseApp.sh"
     ],
     "modules": [
         {
@@ -167,9 +175,6 @@
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
-            ],
-            "post-install": [
-                "install -d ${FLATPAK_DEST}/lib/ffmpeg"
             ],
             "sources": [
                 {
