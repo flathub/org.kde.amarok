@@ -182,6 +182,7 @@
                     "url": "https://download.kde.org/stable/amarok/3.3.2/amarok-3.3.2.tar.xz",
                     "sha256": "aa436b09d3991be48cf37e6f0b71f58aebd5bffaba0fdce7ffd3c2b485d3660b",
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "anitya",
                         "project-id": 13985,
                         "stable-only": true,
